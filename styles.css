@@ -1,0 +1,23 @@
+html {
+    background-color: #26240f;
+}
+header {
+    background-color: goldenrod;
+}
+.btn {
+    background-color: white;
+    border: 2px;
+    border-color: goldenrod;
+    padding: 5px;
+}
+h1 {
+    text-align: center;
+}
+
+footer{
+    background-color: rgb(61, 61, 61);
+}
+
+.btns{
+    display: flex;
+}
