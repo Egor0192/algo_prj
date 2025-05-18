@@ -1,14 +1,21 @@
-html {
-    background-color: #26240f;
+body{
+    background-color: gray;
 }
+
 header {
+    display: flex;
     background-color: goldenrod;
+    border: 3px rgb(0, 0, 0) solid;
+    position: fixed;
+    top:0px;
+    width: 98%;
 }
 .btn {
     background-color: white;
-    border: 2px;
-    border-color: goldenrod;
-    padding: 5px;
+    border: 2px rgb(0, 0, 0) solid;
+    padding: 5px 40px 5px 40px;
+    margin: 5px;
+    cursor: pointer;
 }
 h1 {
     text-align: center;
@@ -16,8 +23,17 @@ h1 {
 
 footer{
     background-color: rgb(61, 61, 61);
+    color: white;
+    padding: 5px;
 }
 
 .btns{
+    margin-left:30%;
     display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fe {
+    margin-top : 200px;
 }
