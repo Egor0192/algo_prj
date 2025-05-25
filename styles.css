@@ -8,14 +8,16 @@ header {
     border: 3px rgb(0, 0, 0) solid;
     position: fixed;
     top:0px;
-    width: 98%;
+    width: 97vw;
+    z-index: 1000;
 }
 .btn {
     background-color: white;
     border: 2px rgb(0, 0, 0) solid;
     padding: 5px 40px 5px 40px;
-    margin: 5px;
+    margin: 1vw;
     cursor: pointer;
+    font-size: 1vw;
 }
 h1 {
     text-align: center;
@@ -28,12 +30,134 @@ footer{
 }
 
 .btns{
-    margin-left:30%;
+    margin-left:30vw;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .fe {
-    margin-top : 200px;
+    margin-top : 100px;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+   
+  .gallery img {
+    width: 32vw;
+    height: auto;
+  }
+  
+  .merch-wrapper {
+    width: 98vw;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 2em;
+}
+
+.merch-item {
+    width: 22vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.merch-item {
+    width: 20vw;
+}
+
+.merch-item-top {
+    width: 90%;
+    aspect-ratio: 1/1;
+    background-size: cover;
+    border: 5px solid white;
+    border-radius: 30%;
+    box-sizing: border-box;
+}
+
+.merch-item-bottom h2 {
+    text-transform: uppercase;
+}
+
+.merch-item-bottom {
+    width: 80%;
+}
+
+.merch-item-bottom h2 {
+    font-size: 2em;
+}
+
+.merch-item-bottom p {
+    font-size: 1.5em;
+    display: -webkit-box;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+}
+
+.merch1 .merch-item-top {
+    background: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR47ZQodjAQRicx2DtpRzo5XVKy50pRYbljekcNDmsDbb__X-HsPUGnM2Z8UTy9DRK-nP0&usqp=CAU);
+    background-size: cover;
+
+}
+
+.merch2 .merch-item-top {
+    background: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7QTjGB62Rw6RwalkoAVfTY-soFo0RMVP5KxGRvQrJgmuVdfvwXUTAw1mbf8UaFe8Inwk&usqp=CAU);
+    background-size: cover;
+}
+
+.merch3 .merch-item-top {
+    background: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTaOTpkQueghVZxXk5yvfzS5y1uzh39T2S5EtGcH5cuX1cEy0KmirdxvacBHbFMBH3zguY&usqp=CAU);
+    background-size: cover;
+}
+
+.merch4 .merch-item-top {
+    background: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSwPn_KnZqIn-BTVYyYUu9ojz6RkLdDtYdq2BeWlW66jqfc84FYH19kbwWC0xEAiihNoMs&usqp=CAU);
+    background-size: cover;
+}
+
+hr {
+    height: 5px;
+    background-color: gold;
+    border: none;
+    margin: 50px 0px 50px 0px;
+  }
+
+  .add-to-cart-group {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.add-to-cart-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: .5em;
+    font-size: 1.2em;
+    aspect-ratio: 1 / 1;
+    color: white;
+    background: #5D4229;
+    border-radius: 2px;
+    width: fit-content;
+    user-select: none;
+}
+
+.add-to-cart-btn:hover {
+    background: #8a623d;
+    cursor: pointer;
+}
+
+.add-to-cart-btn:active {
+    background: #5D4229;
+}
+
+.merch-item-price{
+    font-size: 2em;
 }
